@@ -5,13 +5,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
 ul,
 ol {
-  list-style-type: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  color: white;
+  color: rgb(180, 147, 1);
   background-color: black;
   padding: 1rem;
   display: flex;
@@ -31,13 +31,38 @@ header {
   align-items: center;
   gap: 1rem;
 }
-
-header form {
-  display: none;
+header h1 {
+  justify-self: start;
+}
+header nav {
+  grid-column: span 1;
+  padding-left: 1rem;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+header nav ul li {
+  text-decoration: solid;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+header nav ul li .enlace {
+  color: white;
 }
 
-header ul li {
-  margin-bottom: 0.5rem;
+.enlace {
+  color: yellow;
+  text-decoration: none;
+}
+.enlace:hover {
+  color: white;
+  text-decoration: underline;
+}
+.enlace-active {
+  font-size: 2rem;
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 768px) {
@@ -47,25 +72,6 @@ header ul li {
     grid-template-rows: 70px;
   }
 }
-header h1 {
-  justify-self: start;
-}
-
-header nav {
-  grid-column: span 2;
-}
-
-header ul {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-header form {
-  display: inline-block;
-  justify-self: end;
-}
-
 @media only screen and (min-width: 1200px) {
   header {
     display: flex;
@@ -73,6 +79,22 @@ header form {
     justify-content: space-between;
   }
 }
+.icon-twitter {
+  background-color: rgb(8, 116, 179);
+}
+
+.icon-instagram {
+  background-color: purple;
+}
+
+.icon-facebook {
+  background-color: blue;
+}
+
+.icon-youtube {
+  background-color: red;
+}
+
 .secciones-index {
   padding: 1rem;
 }
@@ -118,7 +140,6 @@ header form {
   border-radius: 50px;
   color: black;
 }
-
 .btn-a:hover {
   border: 2px solid blue;
   background-color: rgb(238, 234, 216);

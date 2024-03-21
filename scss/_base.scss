@@ -1,0 +1,33 @@
+$color-primary: rgb(180, 147, 1);
+
+$colores-redes: (
+    facebook: blue,
+    instagram: purple,
+    twitter: rgb(8, 116, 179),
+    youtube: red
+);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: rgb(180, 147, 1);
+}
