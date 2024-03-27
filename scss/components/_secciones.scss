@@ -1,55 +1,54 @@
 .secciones-index {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .titulo-secciones {
-    text-align: center;
-    margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .contenedor-secciones img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media only screen and (min-width: 768px) {
-
-    .contenedor-secciones {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
+  .contenedor-secciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-
-    .contenedor-secciones {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1.5rem;
-    }
+  .contenedor-secciones {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
 }
 
 .mate-personalizado {
-    background-color: rgb(1, 17, 63);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 75vh;
-    gap: 1rem;
+  background-color: rgb(1, 17, 63);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+  gap: 1rem;
 }
 
 .btn-a {
-    background-color: rgb(180, 147, 1);
-    padding: 0.5rem 1rem;
-    border: 2px solid black;
-    border-radius: 50px;
-    color: black;
+  background-color: rgb(180, 147, 1);
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  border-radius: 50px;
+  color: black;
 
-    &:hover {
-        border: 2px solid blue;
-        background-color: rgb(238, 234, 216);
-        color: black;
-    }
+  &:hover {
+    border: 2px solid blue;
+    background-color: rgb(238, 234, 216);
+    color: black;
+  }
+
 }
