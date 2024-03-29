@@ -23,6 +23,18 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mate-personalizado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
   color: rgb(180, 147, 1);
   background-color: black;
   padding: 1rem;
@@ -41,6 +53,7 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 header nav ul li {
@@ -61,7 +74,7 @@ header nav ul li .enlace {
   text-decoration: underline;
 }
 .enlace-active {
-  font-size: 2rem;
+  font-size: 1rem;
   text-decoration: underline;
 }
 
@@ -126,9 +139,6 @@ header nav ul li .enlace {
 .mate-personalizado {
   background-color: rgb(1, 17, 63);
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 75vh;
   gap: 1rem;
 }
